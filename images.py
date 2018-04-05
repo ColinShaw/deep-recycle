@@ -23,7 +23,7 @@ class Images(object):
         return urls
 
     def _fetch_images(self, urls, destination):
-        for u in urls:
+        for u in set(urls):
             try:
                 d = requests.get(u, headers={'User-Agent':self._c['user-agent']})
                 name = str(uuid.uuid4())

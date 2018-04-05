@@ -18,6 +18,10 @@ looks reasonable.  Just get rid of stuff with text in it, transparent
 backgrounds, things that are at a way too large or small scale, etc.  Some
 categories, like city streets, need additional care since they often 
 contain trash, and we don't want the background images to have trash since
-we are going to overlay trash on these landscape backgrounds.
+we are going to overlay trash on these landscape backgrounds.  For the trash
+photos you don't need to keep all that many.  You want to discard the ones that 
+have a lot of spaces and distractions.  Once you narrow those down you are
+going to want to crop the images so that they contain only trash, as we
+will be sampling blobs out of them.
 
 
