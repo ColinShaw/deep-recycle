@@ -1,0 +1,17 @@
+search-string: 'https://www.google.com/search?q={}&source=lnms&tbm=isch&start={}'
+user-agent: 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.134 Safari/537.36'
+
+landfill-trash:
+    query: 'landfill+trash'
+    pages: 3
+    dest: 'data/trash'
+
+grass-landscape:
+    query: 'normal+grass+landscape'
+    pages: 5
+    dest: 'data/landscape'
+
+cityscape:
+    query: 'normal+city+street'
+    pages: 5
+    dest: 'data/landscape'
