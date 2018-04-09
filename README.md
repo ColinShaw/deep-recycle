@@ -22,6 +22,8 @@ we are going to overlay trash on these landscape backgrounds.  For the trash
 photos you don't need to keep all that many.  You want to discard the ones that 
 have a lot of spaces and distractions.  Once you narrow those down you are
 going to want to crop the images so that they contain only trash, as we
-will be sampling blobs out of them.
+will be sampling blobs out of them.  Since this is annoying, there are some
+images in `/data/trash/` that are already cropped.
+
 
 
