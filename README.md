@@ -5,6 +5,10 @@ trash in images.  All the trash that we generate is absolutely disgusting,
 so I thought it would be interesting to train an image segmenation model
 to try to identify trash in images.  
 
+
+
+## Data
+
 First problem is training data. There is a script that will download 
 a bunch of images from a Google search.  The ones with trash are put
 in `/data/trash/` and the ones that are landscapes are put in 
@@ -25,5 +29,18 @@ going to want to crop the images so that they contain only trash, as we
 will be sampling blobs out of them.  Since this is annoying, there are some
 images in `/data/trash/` that are already cropped.
 
+We will talk later about how we will somewhat efficiently utilize this
+training data.
 
 
+
+## Model
+
+Next problem is the model.  We want to be able to leverage existing
+networks so far as the activations as a function of features are
+concerned.  What we need is to be able to tailor the result to our 
+segmentation, which means we want a hierarchy of feature identifications
+essentially summed and thresholded to compare against our 
+segmentation label.
+
+There are a few common approaches for this, all of which... 
